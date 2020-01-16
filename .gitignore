@@ -1,0 +1,6 @@
+/node_modules
+/config
+secret.js
+key.js
+newkey.js
+.env
