@@ -12,7 +12,6 @@ const {
 
 const UserType = require('./user_type');
 const CharType = require('./char_type');
-const axios = require("axios");
 
 const RootQuery = new GraphQLObjectType({
     name: "RootQueryType",
