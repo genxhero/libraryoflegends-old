@@ -44,6 +44,7 @@ class CharsIndex extends Component {
       </div>);
     }
     const user = this.props.data.currentUser;
+    debugger;
     const characters = this.props.data.characters;
     return (    
       <div className="index-page"> 
