@@ -86,8 +86,8 @@ render() {
     if (!char){
         return <div>Loading...</div>
     }
-
     const creatorMatch = char.user.id === currentUser.id;
+
 
     return <div className="char-show">
         <div className="char-show-top">
@@ -106,8 +106,8 @@ render() {
                   finishEdit={this.finishEdit}
                   /> 
                   : 
-            <div style={{"display": "flex","flex-direction": "row", "paddingBottom": "1rem"}}>
-                <div className="char-show-fieldnames" style={{ "display": "flex", "flex-direction": "column", "align-items": "flex-end"}}>
+            <div style={{"display": "flex","flexDirection": "row", "paddingBottom": "1rem"}}>
+                <div className="char-show-fieldnames" style={{ "display": "flex", "flexDirection": "column", "alignItems": "flexEnd"}}>
                     <span className="char-vital-fieldname">First Name:</span> 
                     <span className="char-vital-fieldname">Last Name:</span>
                     <span className="char-vital-fieldname">Race:</span>
@@ -125,13 +125,13 @@ render() {
              
             <h2>Game Information</h2>
             <div style={{ "display": "flex", "flexDirection": "row" }}>
-                <div className="char-show-fieldnames" style={{ "display": "flex", "flex-direction": "column", "align-items": "flex-end" }}>
+                <div className="char-show-fieldnames" style={{ "display": "flex", "flexDirection": "column", "alignItems": "flexEnd" }}>
                     <span className="char-vital-fieldname">Player:{' '}</span>
                     <span className="char-vital-fieldname">Class:{' '}</span>
                     <span className="char-vital-fieldname">Level:{' '}</span>
                 </div>
 
-                <div className="char-show-data" style={{ "display": "flex", "flex-direction": "column", "justify-content": "flex-start" }}>
+                <div className="char-show-data" style={{ "display": "flex", "flexDirection": "column", "justifyContent": "flexStart" }}>
                     <span className="char-vital"><Link to={`/users/${char.user.username}`}>{char.user.username}</Link> </span>
                     <span className="be-capitalized char-vital">{char.class}</span>
                     <span className="char-vital">{char.level}</span>
@@ -147,7 +147,7 @@ render() {
             <h2 style={{"fontFamily":"sans-serif"}}>Ability Scores</h2>
             <div style={{"display":"flex", "fontSize":"larger"}}>
 
-            <div className="char-show-fieldnames" style={{ "display": "flex", "flex-direction": "column", "align-items": "flex-end" }}>
+            <div className="char-show-fieldnames" style={{ "display": "flex", "flexDirection": "column", "alignItems": "flexEnd" }}>
                 <span className="char-vital-fieldname">STR:</span>
                 <span className="char-vital-fieldname">DEX:</span>
                 <span className="char-vital-fieldname">CON:</span>
@@ -155,7 +155,7 @@ render() {
                 <span className="char-vital-fieldname">WIS:</span>
                 <span className="char-vital-fieldname">CHA:</span>
             </div>
-            <div className="char-show-data" style={{ "display": "flex", "flexDirection": "column", "justifyContent": "flex-start" }}>
+            <div className="char-show-data" style={{ "display": "flex", "flexDirection": "column", "justifyContent": "flexStart" }}>
                 <span className="char-vital">{char.statline.strength}</span>
                 <span className="char-vital">{char.statline.dexterity}</span>
                 <span className="char-vital">{char.statline.constitution}</span>
