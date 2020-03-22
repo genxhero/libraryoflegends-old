@@ -44,7 +44,6 @@ class CharsIndex extends Component {
       </div>);
     }
     const user = this.props.data.currentUser;
-    debugger;
     const characters = this.props.data.characters;
     return (    
       <div className="index-page"> 
@@ -59,7 +58,7 @@ class CharsIndex extends Component {
           <div className="link-container"> 
           {
             user ? <Link to="/newchar" className="link-button">Create New Character</Link> :
-              <h2> <Link to="/login"k>Log In </Link>or<Link to="/register">Sign Up</Link> to Create a New Character!</h2>
+              <h2> <Link to="/login">Log In </Link>or<Link to="/register">Sign Up</Link> to Create a New Character!</h2>
           }
            
           </div>
