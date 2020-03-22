@@ -30,9 +30,10 @@ class CharShow extends Component {
         this.finishEdit = this.finishEdit.bind(this);
     }
 
-    componentWillReceiveProps(newProps) {
-        this.setState(() => { return { bio: newProps.data.character.bio}})
-    }
+    // componentWillReceiveProps(newProps) {
+    //     debugger;
+    //     this.setState(() => { return { bio: newProps.data.character.bio}})
+    // }
     /**
      * Sakujo is Japanese for delete. It's a Death Note reference. Deal with it.
      * @param {*} event 
